@@ -1,0 +1,25 @@
+/*Faça um algoritmo que leia um numero inteiro, e soma a quantidade de numeros lidos*/
+
+import java.util.Scanner;
+
+public class Exemp_Estrutura_for {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		int num, qtdade, soma; 
+		
+		num = entrada.nextInt();
+		soma = 0;
+		
+		for (int i=1; i <= num; i++) {
+		qtdade = entrada.nextInt();
+		soma = soma + qtdade;
+		}
+		
+		System.out.println("O valor da Soma é " + soma);
+		
+		entrada.close();
+	}
+
+}
